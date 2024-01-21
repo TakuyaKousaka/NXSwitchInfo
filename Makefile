@@ -37,13 +37,13 @@ include $(DEVKITPRO)/libnx/switch_rules
 #   of a homebrew executable (.nro). This is intended to be used for sysmodules.
 #   NACP building is skipped as well.
 #---------------------------------------------------------------------------------
-TARGET		:=	Taku-Sysinfo
+TARGET		:=	NXInfo
 BUILD		:=	build.nx
 SOURCES		:=	src ../common/src ../common/src/client
 RESOURCES	:=	resources
 DATA		:=	data
 INCLUDES	:=	../common/include
-APP_TITLE	:=	Taku-Sysinfo
+APP_TITLE	:=	NXInfo
 APP_AUTHOR	:=	Takuya Kousaka
 
 ROMFS				:=	$(BUILD)/romfs

@@ -1,9 +1,9 @@
-project('sys-clk-manager', ['c', 'cpp'],
+project('NXInfo', ['c', 'cpp'],
     version: '1.0.0',
     default_options: [ 'buildtype=release', 'strip=true', 'b_ndebug=if-release', 'cpp_std=c++1z' ],
 )
 
-add_global_arguments('-DAPP_TITLE="sys-clk manager"', language : 'cpp')
+add_global_arguments('-DAPP_TITLE="NXInfo"', language : 'cpp')
 
 subdir('lib/borealis/library')
 
