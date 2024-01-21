@@ -3,8 +3,7 @@
 #include "logo.h"
 #include <borealis.hpp>
 
-About::About()
-{
+About::About() {
     this->addView(new Logo(LogoStyle::ABOUT));
 
     // Subtitle

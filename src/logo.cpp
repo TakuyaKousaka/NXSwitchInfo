@@ -33,16 +33,14 @@ Logo::~Logo() {
         delete this->descLabel;
 }
 
-void Logo::draw(NVGcontext* vg, int x, int y, unsigned width, unsigned height, brls::Style* style, brls::FrameContext* ctx)
-{
+void Logo::draw(NVGcontext* vg, int x, int y, unsigned width, unsigned height, brls::Style* style, brls::FrameContext* ctx) {
     this->logoLabel->frame(ctx);
 
     if (this->descLabel)
         this->descLabel->frame(ctx);
 }
 
-void Logo::layout(NVGcontext* vg, brls::Style* style, brls::FontStash* stash)
-{
+void Logo::layout(NVGcontext* vg, brls::Style* style, brls::FontStash* stash) {
     this->logoLabel->setBoundaries(this->x, this->y + LOGO_OFFSET, this->width, this->height);
     this->logoLabel->layout(vg, style, stash);
     this->height = this->logoLabel->getHeight();

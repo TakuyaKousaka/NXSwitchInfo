@@ -2,8 +2,7 @@
 
 #include <borealis.hpp>
 
-class About : public brls::List
-{
+class About:public brls::List {
     public:
         About();
 

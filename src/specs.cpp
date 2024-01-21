@@ -2,8 +2,7 @@
 
 #include <borealis.hpp>
 
-specs::specs()
-{
+specs::specs() {
 
     // Specs
     this->addView(new brls::Header("Main Specs"));
@@ -21,8 +20,7 @@ specs::specs()
     this->addView(specsTable);
 }
 
-void specs::customSpacing(brls::View* current, brls::View* next, int* spacing)
-{
+void specs::customSpacing(brls::View* current, brls::View* next, int* spacing) {
     if (dynamic_cast<brls::Table*>(current))
         *spacing = 0;
     else

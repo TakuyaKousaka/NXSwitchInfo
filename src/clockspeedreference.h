@@ -2,8 +2,7 @@
 
 #include <borealis.hpp>
 
-class ClockSpeedReference : public brls::List
-{
+class ClockSpeedReference:public brls::List {
     public:
         ClockSpeedReference();
 

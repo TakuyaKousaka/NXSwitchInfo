@@ -2,8 +2,7 @@
 
 #include <borealis.hpp>
 
-class specs : public brls::List
-{
+class specs:public brls::List {
     public:
         specs();
 

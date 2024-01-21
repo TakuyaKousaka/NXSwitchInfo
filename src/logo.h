@@ -2,11 +2,6 @@
 
 #include <borealis.hpp>
 
-enum class LogoStyle
-{
-    HEADER = 0,
-    ABOUT
-};
 #define APP_ASSET(p) APP_RESOURCES p
 #define LOGO_FONT_NAME "logo"
 #define LOGO_FONT_PATH APP_ASSET("fira/FiraSans-Medium-rnx.ttf")
@@ -17,8 +12,12 @@ enum class LogoStyle
 #define LOGO_DESC_FONT_SIZE 28
 #define LOGO_OFFSET 2
 
-class Logo : public brls::View
-{
+enum class LogoStyle {
+    HEADER = 0,
+    ABOUT
+};
+
+class Logo : public brls::View {
     protected:
         brls::Label* logoLabel = nullptr;
         brls::Label* descLabel = nullptr;

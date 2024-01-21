@@ -5,8 +5,7 @@
 #include "about.h"
 #include "logo.h"
 
-MainFrame::MainFrame() : TabFrame()
-{
+MainFrame::MainFrame():TabFrame() {
     // Load UI
     this->setIcon(new Logo(LogoStyle::HEADER));
 

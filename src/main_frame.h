@@ -2,8 +2,7 @@
 
 #include <borealis.hpp>
 
-class MainFrame : public brls::TabFrame
-{
+class MainFrame:public brls::TabFrame {
     public:
         MainFrame();
 };

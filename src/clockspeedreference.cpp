@@ -2,8 +2,7 @@
 
 #include <borealis.hpp>
 
-ClockSpeedReference::ClockSpeedReference()
-{
+ClockSpeedReference::ClockSpeedReference() {
     // CPU
     this->addView(new brls::Header("CPU Clocks"));
     brls::Table *cpuTable = new brls::Table();
@@ -35,8 +34,7 @@ ClockSpeedReference::ClockSpeedReference()
     this->addView(memTable);
 }
 
-void ClockSpeedReference::customSpacing(brls::View* current, brls::View* next, int* spacing)
-{
+void ClockSpeedReference::customSpacing(brls::View* current, brls::View* next, int* spacing) {
     if (dynamic_cast<brls::Table*>(current))
         *spacing = 0;
     else
